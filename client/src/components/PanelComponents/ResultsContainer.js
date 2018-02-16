@@ -3,9 +3,15 @@ import React from "react";
 class ResultsContainer extends React.Component {
 
     render() {
-        return(
-            <p>this is a placeholder</p>
-        )
+        return (
+            <div className="list-overflow-container">
+                <ul className="list-group">
+                    <li className="list-group-item">
+                        {this.props.children}
+                    </li>
+                </ul>
+            </div>
+        );
     }
 }
 
