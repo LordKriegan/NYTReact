@@ -9,7 +9,7 @@ class ResultItem extends React.Component {
                     <h4>{this.props.articleTitle}</h4>
                 </div>
                 <div className="col-xs-3 text-center">
-                    <button onClick={this.props.clickHandler} className="btn btn-default">Save!</button>
+                    <button onClick={this.props.clickHandler} className="btn btn-default">{this.props.btnTxt}</button>
                 </div>
             </div>
         );

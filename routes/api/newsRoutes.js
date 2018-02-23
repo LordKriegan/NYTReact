@@ -6,7 +6,7 @@ const axios = require('axios');
 router
   .route("/")
   .get(newsController.findAll)
-  .put(newsController.create)
+  .post(newsController.create)
 //matches with "/api/newsRoutes/:id"
 router
   .route("/:id")
