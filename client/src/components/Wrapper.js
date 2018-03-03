@@ -53,7 +53,7 @@ class Wrapper extends React.Component {
                 <div className="row">
                     <div className="col-xs-10 col-xs-offset-1">
                         {/* search form */}
-                        <Panel panelTitle="Search" panelComponent={<SearchForm inputChange={this.handleInputChange} searchBtnFunc={this.fetchNewArticles}/>} />
+                        <Panel query={this.state.query} endDate={this.state.endDate} startDate={this.state.startDate} panelTitle="Search" panelComponent={<SearchForm inputChange={this.handleInputChange} searchBtnFunc={this.fetchNewArticles}/>} />
                         
                         {/* search results */}
                         {(this.state.newArticles[0]) ? <Panel panelTitle="Results" panelComponent={
